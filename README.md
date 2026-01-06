@@ -67,3 +67,35 @@ Update the connection string in `appsettings.json`:
 "ConnectionStrings": {
   "DefaultConnection": "Server=YOUR_SERVER;Database=EmployeeDb;Trusted_Connection=True;"
 }
+
+
+3️⃣ Apply Migrations (If Required)
+dotnet ef database update
+
+4️⃣ Run the API
+dotnet run
+The API will start at:  http://localhost:5211
+
+5️⃣ Swagger UI
+Open Swagger to test APIs:
+http://localhost:5211/swagger
+
+🧠 Architecture Notes
+Follows RESTful API principles
+Uses Entity Framework Core for data access
+Clean separation of concerns (Controllers, Models, DbContext)
+Designed to be production-ready and interview-safe
+
+🧪 Testing
+Manual testing via Swagger UI.
+Automated tests are not configured yet.
+
+👤 Author
+Abhishek Patidar
+Angular & .NET Full-Stack Developer
+
+https://github.com/Abhishekpatidar0/employee-management-frontend 
+
+
+
+
